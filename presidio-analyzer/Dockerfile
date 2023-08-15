@@ -16,4 +16,4 @@ RUN pipenv run python install_nlp_models.py --conf_file ${NLP_CONF_FILE}
 
 COPY . /usr/bin/${NAME}/
 EXPOSE ${PORT}
-CMD pipenv run python app.py
+CMD pipenv run python app.py --host 0.0.0.0
