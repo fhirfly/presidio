@@ -12,4 +12,4 @@ RUN pip install pipenv \
 COPY . /usr/bin/${NAME}/
 
 EXPOSE ${PORT}
-CMD pipenv run python app.py
+CMD pipenv run python app.py --host 0.0.0.0
